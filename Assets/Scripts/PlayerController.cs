@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Player _player;
+    private float _jumpStrength = 2f;
+    private float _gravity = -5f;
+    private Vector3 _position;
+    
+    private const float MultiplyConst = 1f;
+    
+    private void Update()
     {
-        
+        _position.y += _gravity * Time.deltaTime * MultiplyConst;
+        _player.transform.position += _position * Time.deltaTime * MultiplyConst;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Jump()
     {
-        
+        _position = Vector3.up * _jumpStrength;
     }
 }

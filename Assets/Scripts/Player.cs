@@ -8,15 +8,12 @@ public class Player : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Trigger");
         switch (other.gameObject.tag)
         {
-            case "Ground":
-            case "Tube":
+            case "Barricade":
             {
                 OnPlayerDied?.Invoke();
                 break;
-                
             }
             case "Scoring":
             {

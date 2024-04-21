@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class GameController : MonoBehaviour
 {
@@ -19,15 +17,12 @@ public class GameController : MonoBehaviour
 
     private void OnPlayerScore()
     {
-        Debug.Log("PlayerScored");
         _currentScore++;
     }
     
     private void OnPlayerDied()
     {
-        Debug.Log("PlayerDied");
         Time.timeScale = 0f;
-
         CheckBestScore();
         _gameOverScreen.SetActive(true);
         _gameResultsView.SetText(_currentScore, _bestScore);

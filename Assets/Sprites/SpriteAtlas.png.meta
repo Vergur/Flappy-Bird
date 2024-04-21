@@ -471,6 +471,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: NewScore_Sprite
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 4
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614b9fc928085e742a8f5b849fd9c952
+      internalID: 1420348943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SilverCoin_Sprite
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 37
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca662d06c11d964ebbe880f3414dd24
+      internalID: 1480753127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldenCoin_Sprite
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 13
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1edc0965960694ab4068664882d535
+      internalID: -1071173012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -489,11 +552,14 @@ TextureImporter:
       BirdState2_Sprite: 1191772714
       GameOver_Sprite: -2022877079
       GameResults_Sprite: 530112186
+      GoldenCoin_Sprite: -1071173012
       Ground: 246184434
       MenuButton_Sprite: -630400563
+      NewScore_Sprite: 1420348943
       OKButton_Sprite: -2133970095
       PauseButton_Sprite: 1495319449
       Play_Sprite: 537011315
+      SilverCoin_Sprite: 1480753127
       Title_Sprite: 1812073953
       TubeBottom_Sprite: -1953344388
       TubeTop_Sprite: -328295987

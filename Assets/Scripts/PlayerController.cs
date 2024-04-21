@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Player _player;
+    public Player Player;
     private float _jumpStrength = 2f;
     private float _gravity = -5f;
     private Vector3 _position;
@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         _position.y += _gravity * Time.deltaTime * MultiplyConst;
-        _player.transform.position += _position * Time.deltaTime * MultiplyConst;
+        Player.transform.position += _position * Time.deltaTime * MultiplyConst;
     }
 
     public void Jump()

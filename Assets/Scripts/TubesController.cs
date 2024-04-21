@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +9,7 @@ public class TubesController : MonoBehaviour
 
     private void Start()
     {
+        _stash = new List<GameObject>();
         for (int i = 0; i < 10; i++)
         {
             _stash.Add(Instantiate(_tubesPrefab, _spawnPoint));

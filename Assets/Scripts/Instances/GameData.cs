@@ -13,12 +13,12 @@ public class GameData : MonoBehaviour
         Instance = this;
     }
 
-    private void SaveDifficultyLevel(SettingsController.Difficulty difficulty)
+    public void SaveDifficultyLevel(SettingsController.Difficulty difficulty)
     {
         Difficulty = difficulty;
     }
     
-    private void SaveTubePrefab(Tube tube)
+    public void SaveTubePrefab(Tube tube)
     {
         TubePrefab = tube;
     }

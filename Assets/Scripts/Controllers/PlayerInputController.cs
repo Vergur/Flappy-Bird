@@ -1,21 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private PlayerController _playerController;
-    private PlayerInput _playerInput;
-
-    private void OnEnable()
+    [SerializeField] private Button _jumpButton;
+    
+    private void Start()
     {
-        _playerInput = new PlayerInput();
-        _playerInput.Enable();
-
-        _playerInput.PlayerControl.Jump.started += ctx => _playerController.Jump();
+        _jumpButton.onClick.AddListener(JumpButton);
     }
 
-    private void OnDestroy()
+    private void JumpButton()
     {
-        _playerInput.Dispose();
-        _playerInput.PlayerControl.Jump.started -= ctx => _playerController.Jump();
+        _playerController.Jump();
     }
 }

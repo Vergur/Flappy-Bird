@@ -94,7 +94,7 @@ public class SettingsController : MonoBehaviour
     {
         TubePrefab.ChangeTubeColor(_tubesSprite[dayTime]);
         ActivateButton(_tubeSpriteButtons, dayTime);
-        GameData.Instance.TubePrefab = this.TubePrefab;
+        GameData.Instance.SaveTubePrefab(TubePrefab);
         PlayerPrefs.SetInt("TubeSkin", dayTime);
     }
 
@@ -103,7 +103,7 @@ public class SettingsController : MonoBehaviour
         DifficultyLevel = (Difficulty)difficulty;
         TubePrefab.ChangePositions((Difficulty)difficulty);
         ActivateButton(_difficultyButtons, difficulty);
-        GameData.Instance.Difficulty = this.DifficultyLevel;
+        GameData.Instance.SaveDifficultyLevel(DifficultyLevel);
         PlayerPrefs.SetInt("Difficulty", difficulty);
     }
 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -10,7 +11,6 @@ public class GameSceneController : MonoBehaviour
     [SerializeField] private GameObject _gameScreen;
     [SerializeField] private GameObject _gameOverScreen;
 
-
     [Header("Views")]
     public GameResultsView GameResultsView;
     [SerializeField] private TextMeshProUGUI _currentTimeText;
@@ -18,7 +18,13 @@ public class GameSceneController : MonoBehaviour
 
     [Header("Controllers")]
     public ScenesController ScenesController;
-    
+
+    private void OnEnable()
+    {
+        PauseGame();
+        UnpauseGame();
+    }
+
     public void PauseGame()
     {
         ScenesController.PauseGame();

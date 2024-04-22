@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump()
     {
+        AudioController.Instance.OnPlayerWing();
         _position = Vector3.up * _jumpStrength;
         StopCoroutine(_coroutine);
         _coroutine = StartCoroutine(RotatePlayer(new Vector3(0, 0, 45), 0.4f));

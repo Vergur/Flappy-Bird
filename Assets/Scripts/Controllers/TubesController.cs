@@ -15,7 +15,7 @@ public class TubesController : MonoBehaviour
 
     private void Start()
     {
-        _tubesPrefab = SettingsController.Instance.TubePrefab.gameObject;
+        _tubesPrefab = GameData.Instance.TubePrefab.gameObject;
         _destroyPoint.OnTubeDestroy += DestroyTube;
         CreateStash();
         ChangeTubesSpeed();
@@ -24,11 +24,11 @@ public class TubesController : MonoBehaviour
 
     private void ChangeTubesSpeed()
     {
-        _speed = SettingsController.Instance.DifficultyLevel switch
+        _speed = GameData.Instance.Difficulty switch
         {
             SettingsController.Difficulty.Easy => 0.55f,
             SettingsController.Difficulty.Medium => 0.65f,
-            SettingsController.Difficulty.Hard => 0.7f
+            SettingsController.Difficulty.Hard => 0.75f
         };
     }
 

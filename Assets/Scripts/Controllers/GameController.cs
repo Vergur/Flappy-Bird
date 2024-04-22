@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
 
     private void OnPlayerScore()
     {
+        AudioController.Instance.OnPlayerScore();
         _gameSceneController.UpdateCurrentScore(++_currentScore);
     }
     
@@ -25,6 +26,7 @@ public class GameController : MonoBehaviour
         CheckMedalResult();
         CheckBestScore();
         _gameSceneController.ShowLoseScreen(_currentScore, _bestScore);
+        AudioController.Instance.OnPlayerDied();
     }
 
     private void CheckMedalResult()

@@ -7,11 +7,13 @@ public class ScenesController : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
         UnpauseGame();
+        AudioController.Instance.OnLoad();
     }
     
     public void LoadMenuScene()
     {
-        SceneManager.LoadScene("MenuScene", LoadSceneMode.Single);
+        UnpauseGame();
+        SceneManager.LoadScene("MenuScene");
     }
 
     public void PauseGame()

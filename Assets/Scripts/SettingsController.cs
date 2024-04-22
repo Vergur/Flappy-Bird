@@ -14,6 +14,9 @@ public class SettingsController : MonoBehaviour
     [SerializeField] private Material _backgroundMaterial;
     [SerializeField] private List<Texture> _dayTimeTexture;
     [SerializeField] private List<Sprite> _tubesSprite;
+
+    [Header("Controllers")] 
+    [SerializeField] private ParallaxController _parallaxController;
     public Tube TubePrefab;
     public Difficulty DifficultyLevel;
     public DayTime TubeSkin;
@@ -73,6 +76,7 @@ public class SettingsController : MonoBehaviour
     private void ChangeBackgroundMaterial(int dayTime)
     {
         _backgroundMaterial.mainTexture = _dayTimeTexture[dayTime];
+        _parallaxController.ChangeActualTexture(_dayTimeTexture[dayTime]);
         ActivateButton(_backgroundSpriteButtons, dayTime);
         PlayerPrefs.SetInt("BackgroundSkin", dayTime);
     }

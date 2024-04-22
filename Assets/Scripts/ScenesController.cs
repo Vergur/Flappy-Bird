@@ -5,12 +5,13 @@ public class ScenesController : MonoBehaviour
 {
     public void LoadPlayScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        UnpauseGame();
     }
     
     public void LoadMenuScene()
     {
-        SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadScene("MenuScene", LoadSceneMode.Single);
     }
 
     public void PauseGame()

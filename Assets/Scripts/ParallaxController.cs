@@ -11,4 +11,9 @@ public class ParallaxController : MonoBehaviour
         _groundParallax.material.mainTextureOffset += new Vector2(animationSpeed * 2 * Time.deltaTime, 0);
         _backgroundParallax.material.mainTextureOffset += new Vector2(animationSpeed * Time.deltaTime, 0);
     }
+
+    public void ChangeActualTexture(Texture texture)
+    {
+        _backgroundParallax.material.mainTexture = texture;
+    }
 }

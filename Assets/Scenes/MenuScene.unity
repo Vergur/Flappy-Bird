@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 45041521}
   - component: {fileID: 45041522}
   m_Layer: 0
-  m_Name: SettingsController
+  m_Name: DontDestroyOnLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,12 +148,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45041520}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240313022}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &45041522
 MonoBehaviour:
@@ -184,6 +184,7 @@ MonoBehaviour:
   _tubesSprite:
   - {fileID: -1953344388, guid: ca3b249a5ee5a474cb87547310b96252, type: 3}
   - {fileID: 1378720548, guid: ca3b249a5ee5a474cb87547310b96252, type: 3}
+  _parallaxController: {fileID: 1648140281}
   TubePrefab: {fileID: -33948299385062607, guid: acd884f38dfefc44b8bc66a06607d1df, type: 3}
   DifficultyLevel: 1
   TubeSkin: 0
@@ -2091,7 +2092,6 @@ Transform:
   - {fileID: 1648140280}
   - {fileID: 263421366}
   - {fileID: 1328247665}
-  - {fileID: 45041521}
   m_Father: {fileID: 735796653}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1319020446
@@ -2112,7 +2112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1319020447
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2261,7 +2261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1368487081
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3575,3 +3575,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1756867669}
   - {fileID: 735796653}
+  - {fileID: 45041521}

@@ -5,7 +5,7 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField] private PlayerController _playerController;
     private PlayerInput _playerInput;
 
-    private void Start()
+    private void OnEnable()
     {
         _playerInput = new PlayerInput();
         _playerInput.Enable();
@@ -15,6 +15,7 @@ public class PlayerInputController : MonoBehaviour
 
     private void OnDestroy()
     {
+        _playerInput.Dispose();
         _playerInput.PlayerControl.Jump.started -= ctx => _playerController.Jump();
     }
 }

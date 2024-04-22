@@ -3,8 +3,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private PlayerController _playerController;
-    [SerializeField] private GameObject _gameOverScreen;
-    [SerializeField] private GameResultsView _gameResultsView;
+    [SerializeField] private GameSceneController _gameSceneController;
+    
     private int _currentScore = 0;
     private int _bestScore = 0;
     
@@ -17,21 +17,26 @@ public class GameController : MonoBehaviour
 
     private void OnPlayerScore()
     {
-        _currentScore++;
+        _gameSceneController.UpdateCurrentScore(++_currentScore);
     }
     
     private void OnPlayerDied()
     {
-        Time.timeScale = 0f;
+        CheckMedalResult();
         CheckBestScore();
-        _gameOverScreen.SetActive(true);
-        _gameResultsView.SetText(_currentScore, _bestScore);
+        _gameSceneController.ShowLoseScreen(_currentScore, _bestScore);
+    }
+
+    private void CheckMedalResult()
+    {
+        _gameSceneController.GameResultsView.EnableMedal(_currentScore * 2 > _bestScore ? GameResultsView.Coins.Golden : GameResultsView.Coins.Silver);
     }
 
     private void CheckBestScore()
     {
         if (_currentScore <= _bestScore) return;
-
+        
+        _gameSceneController.GameResultsView.ShowNewRecord();
         _bestScore = _currentScore;
         PlayerPrefs.SetInt("PlayerBestScore", _bestScore);
     }

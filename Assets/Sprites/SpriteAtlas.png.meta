@@ -304,7 +304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TubeBottom_Sprite
+      name: TubeBottomDay_Sprite
       rect:
         serializedVersion: 2
         x: 84
@@ -325,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TubeTop_Sprite
+      name: TubeTopDay_Sprite
       rect:
         serializedVersion: 2
         x: 56
@@ -480,7 +480,7 @@ TextureImporter:
         width: 16
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,7 +501,7 @@ TextureImporter:
         width: 21
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,7 +522,7 @@ TextureImporter:
         width: 22
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,6 +530,153 @@ TextureImporter:
       bones: []
       spriteID: cd1edc0965960694ab4068664882d535
       internalID: -1071173012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GetReady_Sprite
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 428
+        width: 92
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c22455a09456545baf5fe166c6fcea
+      internalID: -453376847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Number1_Spriite
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 39
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be85d34818f1db44f897cfe72f000d3e
+      internalID: 1049207479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Number2_Spriite
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 334
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22532a2472949d04cab596b84393d5ab
+      internalID: 1911887717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Number3_Spriite
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 334
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf82e9a2fded3b84d90ca851ccd2ec26
+      internalID: 1391386158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tap_Sprite
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 371
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af1c4660f4b3ea42b55604674e43a18
+      internalID: -1946543773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TubeBottomNight_Sprite
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 29
+        width: 26
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c88b2f6e1d153419de12ca81cc99dd
+      internalID: 1530268196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TubeBottomNigh_Sprite
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 26
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8a168ae4aba57468edc163a8486213
+      internalID: 1378720548
       vertices: []
       indices: 
       edges: []
@@ -552,17 +699,24 @@ TextureImporter:
       BirdState2_Sprite: 1191772714
       GameOver_Sprite: -2022877079
       GameResults_Sprite: 530112186
+      GetReady_Sprite: -453376847
       GoldenCoin_Sprite: -1071173012
       Ground: 246184434
       MenuButton_Sprite: -630400563
       NewScore_Sprite: 1420348943
+      Number1_Spriite: 1049207479
+      Number2_Spriite: 1911887717
+      Number3_Spriite: 1391386158
       OKButton_Sprite: -2133970095
       PauseButton_Sprite: 1495319449
       Play_Sprite: 537011315
       SilverCoin_Sprite: 1480753127
+      Tap_Sprite: -1946543773
       Title_Sprite: 1812073953
-      TubeBottom_Sprite: -1953344388
-      TubeTop_Sprite: -328295987
+      TubeBottomDay_Sprite: -1953344388
+      TubeBottomNigh_Sprite: 1378720548
+      TubeBottomNight_Sprite: 1530268196
+      TubeTopDay_Sprite: -328295987
       UnpauseButton_Sprite: 1048989476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

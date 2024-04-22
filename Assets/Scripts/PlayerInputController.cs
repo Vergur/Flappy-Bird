@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using Unity.VisualScripting;
+using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
@@ -11,5 +13,10 @@ public class PlayerInputController : MonoBehaviour
         _playerInput.Enable();
 
         _playerInput.PlayerControl.Jump.started += ctx => _playerController.Jump();
+    }
+
+    private void OnDestroy()
+    {
+        _playerInput.PlayerControl.Jump.started -= ctx => _playerController.Jump();
     }
 }

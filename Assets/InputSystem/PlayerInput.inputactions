@@ -18,8 +18,8 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "87d678c0-f021-4e97-b11d-7e719936432c",
-                    "path": "<Mouse>/leftButton",
+                    "id": "6224dc14-a86c-400b-aeba-0f2f463b89f6",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -29,8 +29,8 @@
                 },
                 {
                     "name": "",
-                    "id": "6224dc14-a86c-400b-aeba-0f2f463b89f6",
-                    "path": "<Keyboard>/space",
+                    "id": "c26bc958-4ee1-442d-88d4-50078c0de0f4",
+                    "path": "<Touchscreen>/Press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

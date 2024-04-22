@@ -20,7 +20,7 @@ public class AudioController : MonoBehaviour
     {
         if (Instance != null) return;
 
-        IsEnabled = PlayerPrefs.GetInt("AudioEnabled") == 1;
+        IsEnabled = PlayerPrefs.GetInt("AudioEnabled") == 0;
         Instance = this;
         OnPlayerDied += PlayDeathSound;
         OnPlayerScore += PlayScoreSound;
@@ -51,7 +51,7 @@ public class AudioController : MonoBehaviour
     public void SwitchAudioAccess()
     {
         IsEnabled = !IsEnabled;
-        PlayerPrefs.SetInt("AudioEnabled", IsEnabled ? 1 : 0);
+        PlayerPrefs.SetInt("AudioEnabled", IsEnabled ? 0 : 1);
     }
     
     private void PlaySound(AudioClip audio)

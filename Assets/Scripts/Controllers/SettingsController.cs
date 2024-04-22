@@ -62,7 +62,7 @@ public class SettingsController : MonoBehaviour
 
     private void ChangeAudioButtonSprite(bool isEnabled)
     {
-        _audioButtonImage.sprite = _audioButtonSprites[isEnabled ? 1 : 0];
+        _audioButtonImage.sprite = _audioButtonSprites[isEnabled ? 0 : 1];
     }
 
     private void GetSettingsValues()

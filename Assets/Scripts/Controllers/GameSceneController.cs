@@ -19,7 +19,7 @@ public class GameSceneController : MonoBehaviour
     [Header("Controllers")]
     public ScenesController ScenesController;
 
-    private void OnEnable()
+    private void Awake()
     {
         PauseGame();
         UnpauseGame();

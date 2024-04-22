@@ -11,6 +11,8 @@ public class GameData : MonoBehaviour
         if (Instance != null) return;
         
         Instance = this;
+        Application.targetFrameRate = 60;
+        QualitySettings.vSyncCount = 1;
     }
 
     public void SaveDifficultyLevel(SettingsController.Difficulty difficulty)

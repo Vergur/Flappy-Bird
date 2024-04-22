@@ -6,7 +6,6 @@ public class ScenesController : MonoBehaviour
     public void LoadPlayScene()
     {
         SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
-        UnpauseGame();
         AudioController.Instance.OnLoad();
     }
     
